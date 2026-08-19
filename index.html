@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENTERGALATIC | Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+header{
+    background:black;
+    color:gold;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav a{
+    color:gold;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:gold;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    background:gold;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:white;
+}
+
+section{
+    padding:70px;
+}
+
+h2{
+    color:gold;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    border:2px solid gold;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#111;
+    padding:25px;
+    border-left:5px solid gold;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">ENTERGALATIC</div>
+
+<nav>
+<a href="index.html">Home</a>
+    <a href="booking.html">Booking</a>
+    <a href="rate.html">Rate Us</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to ENTERGALATIC</h1>
+
+<p>
+Making Event Booking & Check-In Easy and Seamless.
+</p>
+
+<button onclick="bookNow()">Book Now</button>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Events We Manage</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💍 Weddings</h3>
+<p>Elegant wedding planning and guest registration.</p>
+</div>
+
+<div class="card">
+<h3>🎂 Birthdays</h3>
+<p>Celebrate birthdays without the stress.</p>
+</div>
+
+<div class="card">
+<h3>⚰ Burials</h3>
+<p>Organized memorial and burial event management.</p>
+</div>
+
+<div class="card">
+<h3>📢 Promotions</h3>
+<p>Business launches and promotional events.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Corporate</h3>
+<p>Professional conferences and company events.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Other Events</h3>
+<p>Baby showers, anniversaries, concerts and more.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Why Choose Us?</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>✔ Easy Registration</h3>
+<p>Guests can register in minutes.</p>
+</div>
+
+<div class="feature">
+<h3>✔ Secure Payment</h3>
+<p>Safe and reliable online payment.</p>
+</div>
+
+<div class="feature">
+<h3>✔ Fast Check-In</h3>
+<p>Quick QR code check-in for attendees.</p>
+</div>
+
+<div class="feature">
+<h3>✔ Professional Support</h3>
+<p>Our team is available whenever you need help.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 ENTERGALATIC | Gold & Black Event Management Platform</p>
+
+</footer>
+
+<script>
+
+function bookNow(){
+    alert("Welcome! You will be redirected to the Booking Page.");
+    // window.location.href="booking.html";
+}
+
+</script>
+
+</body>
+</html>

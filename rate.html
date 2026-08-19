@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENTERGALATIC | Rate Us</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+}
+
+header{
+    background:#111;
+    color:gold;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    margin:40px auto;
+}
+
+section{
+    background:#111;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:10px;
+    border:2px solid gold;
+}
+
+h2{
+    color:gold;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.stars{
+    text-align:center;
+    font-size:40px;
+    cursor:pointer;
+}
+
+.star{
+    color:gray;
+    transition:.3s;
+}
+
+.star:hover{
+    color:gold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:gold;
+    color:black;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:white;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ENTERGALATIC</h1>
+<p>Rate Us & Contact</p>
+</header>
+
+<div class="container">
+
+<section>
+
+<h2>Rate Our Website</h2>
+
+<div class="stars">
+
+<span class="star" onclick="rate(1)">★</span>
+<span class="star" onclick="rate(2)">★</span>
+<span class="star" onclick="rate(3)">★</span>
+<span class="star" onclick="rate(4)">★</span>
+<span class="star" onclick="rate(5)">★</span>
+
+</div>
+
+<p id="rating" style="text-align:center;margin-top:20px;"></p>
+
+<input type="text" placeholder="Your Name">
+
+<textarea rows="5" placeholder="Leave a comment..."></textarea>
+
+<button onclick="submitReview()">Submit Review</button>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 Phone: +234 812 345 6789</p>
+
+<p>📧 Email: info@entergalatic.com</p>
+
+<p>📍 Address: Lagos, Nigeria</p>
+
+<h2>Follow Us</h2>
+
+<p>📘 Facebook: Entergalatic Events</p>
+
+<p>📸 Instagram: @entergalatic</p>
+
+<p>🐦 X: @Entergalatic</p>
+
+<p>🎵 TikTok: @entergalatic</p>
+
+<p>▶ YouTube: Entergalatic</p>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>© 2026 ENTERGALATIC | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function rate(number){
+
+document.getElementById("rating").innerHTML =
+"You rated us <strong>" + number + " ⭐</strong>. Thank you!";
+
+}
+
+function submitReview(){
+
+alert("Thank you for your feedback!");
+
+}
+
+</script>
+
+</body>
+</html>
